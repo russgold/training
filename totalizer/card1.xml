@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<card date='21-Jul-2005' track='Belmont'>
+    <race number='1'>
+        <horse name='Lucky Dan'     odds='2-1'/>
+        <horse name='Charlie Horse' odds='10-1'/>
+        <horse name='Red Flag'      odds='3-2'/>
+        <horse name='Holy Roller'   odds='4-3'/> 
+    </race>
+    <race number='2'>
+        <horse name="Debbie's Deb"    odds='5-1'/>
+        <horse name='Arewehavingfunyet' odds='10-1'/>
+        <horse name='Kelso'             odds='3-2'/>
+        <horse name='Chicken Little'    odds='20-1'/> 
+    </race>
+</card>
