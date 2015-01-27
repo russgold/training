@@ -1,19 +1,23 @@
 
 
 public class Movie {
-    private String title;
-    private PriceCode priceCode;
+    public static final int REGULAR = 0;
+    public static final int NEW_RELEASE = 1;
+    public static final int CHILDRENS = 2;
 
-    public Movie(String title, PriceCode priceCode) {
+    private String title;
+    private int priceCode;
+
+    public Movie(String title, int priceCode) {
         this.title = title;
         this.priceCode = priceCode;
     }
 
-    public PriceCode getPriceCode() {
+    public int getPriceCode() {
         return priceCode;
     }
 
-    public void setPriceCode(PriceCode code) {
+    public void setPriceCode(int code) {
         priceCode = code;
     }
 
