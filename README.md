@@ -1,4 +1,5 @@
 training
 ========
 
-Resources for training course
+Resources for training courses
+- [Refactoring exercise](VideoStore.zip)
