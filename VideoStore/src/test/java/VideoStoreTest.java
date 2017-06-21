@@ -83,19 +83,19 @@ public class VideoStoreTest {
     }
 
     // Requirement 2: Add support for classic movies. Rental charge is $1 for the first 3 days, and $1 per day thereafter.
-    //                Award one frequent renter point for the entire rental
+    //                Award no frequent renter point
 
     @Test @Ignore
     public void whenShortClassicRental_chargeFlatRate() {
         customer.addRental(new Rental(new Movie("Gone With the Wind", Movie.NEW_RELEASE /* CLASSIC */ ), 3));
-        assertEquals("Rental Record for Fred\n\tGone With the Wind\t1.0\nYou owed 1.0\nYou earned 1 frequent renter points\n",
+        assertEquals("Rental Record for Fred\n\tGone With the Wind\t1.0\nYou owed 1.0\nYou earned 0 frequent renter points\n",
                 customer.statement());
     }
 
     @Test @Ignore
     public void whenLongClassicRental_chargeFlatRateForFirstThreeDaysThenPerDayRate() {
         customer.addRental(new Rental(new Movie("Gone With the Wind", Movie.NEW_RELEASE /* CLASSIC */ ), 5));
-        assertEquals("Rental Record for Fred\n\tGone With the Wind\t3.0\nYou owed 3.0\nYou earned 1 frequent renter points\n",
+        assertEquals("Rental Record for Fred\n\tGone With the Wind\t3.0\nYou owed 3.0\nYou earned 0 frequent renter points\n",
                 customer.statement());
     }
 }
